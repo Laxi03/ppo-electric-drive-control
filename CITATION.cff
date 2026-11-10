@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software in research, please cite it and identify the code revision and experiment configuration."
+type: software
+title: "RLlib Drive Control: DC and PMSM Simulation"
+authors:
+  - family-names: Kun
+    given-names: László Ákos
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/Laxi03/ppo-electric-drive-control"
+keywords:
+  - electric drives
+  - reinforcement learning
+  - proximal policy optimization
+  - intrinsic curiosity

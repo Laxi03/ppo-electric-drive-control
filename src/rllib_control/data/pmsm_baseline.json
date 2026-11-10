@@ -1,0 +1,25 @@
+{
+  "motor": "pmsm",
+  "environment": {
+    "motor": "pmsm",
+    "architecture": "current_reference_v2",
+    "command_slew_v_per_s": 1000.0,
+    "command_smoothness_weight": 0.05,
+    "current_reference_limit": 0.8,
+    "current_reference_slew": 500.0,
+    "current_bandwidth": 300.0,
+    "tracking_weight": 100.0,
+    "tracking_absolute_weight": 20.0,
+    "current_weight": 0.02,
+    "id_weight": 0.1,
+    "stability_profile": "pmsm-v1",
+    "current_rate_weight": 0.002,
+    "current_rate_timescale_s": 0.02
+  },
+  "gains": {"kp": 0.03, "ki": 0.1},
+  "validation_seeds": [501, 502],
+  "profile": "random",
+  "reference_scale": 1.0,
+  "episode_length": 8.0,
+  "selection": "Frozen from validation-only PI/FOC tuning for the 700-iteration PMSM study."
+}

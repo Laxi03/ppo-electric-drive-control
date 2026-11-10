@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rllib-drive-control"
+version = "0.1.0"
+description = "DC and PMSM drive-control simulation with PI/FOC, PPO and intrinsic curiosity"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "László Ákos Kun"}]
+dependencies = [
+    "ray[rllib]==2.56.0",
+    "gymnasium==1.2.2",
+    "torch==2.13.0",
+    "numpy>=1.26,<3",
+    "matplotlib>=3.8,<4",
+]
+
+[project.optional-dependencies]
+tsne = ["scikit-learn>=1.5,<2"]
+
+[project.urls]
+Repository = "https://github.com/Laxi03/ppo-electric-drive-control"
+Issues = "https://github.com/Laxi03/ppo-electric-drive-control/issues"
+
+[project.scripts]
+rllib-control = "rllib_control.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["sim_DC_RLlib_Curiosity", "sim_PMSM_RLlib_Curiosity"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["rllib_control*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+rllib_control = ["data/*.json"]

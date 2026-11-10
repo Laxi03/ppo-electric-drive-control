@@ -1,0 +1,19 @@
+{
+  "motor": "dc",
+  "environment": {
+    "motor": "dc",
+    "architecture": "current_reference_v2",
+    "command_slew_v_per_s": 1000.0,
+    "command_smoothness_weight": 0.05,
+    "current_reference_limit": 0.8,
+    "current_reference_slew": 500.0,
+    "current_bandwidth": 300.0,
+    "tracking_weight": 100.0,
+    "tracking_absolute_weight": 1.0,
+    "current_weight": 0.02,
+    "id_weight": 0.1
+  },
+  "gains": {"kp": 0.015, "ki": 0.8602806544914777},
+  "episode_length": 8.0,
+  "selection": "Frozen from a nominal 600 rad/s reversal targeting 25% overshoot; observed 25.1634%."
+}

@@ -1,0 +1,35 @@
+# Environments, caches and build products
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.egg-info/
+/build/
+/dist/
+
+# Local experiments, data and archives
+/RL_models/
+/outputs/
+/TDK_Figures/
+/archive/
+/datasheets/
+/ray_results/
+/electric_drive_gui/
+*.zip
+*.pt
+*.pth
+
+# IDE, OS and local secrets
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+*.pem
+*.key

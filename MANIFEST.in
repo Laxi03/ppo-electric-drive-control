@@ -1,0 +1,7 @@
+include LICENSE CITATION.cff CONTRIBUTING.md
+include .gitignore .gitattributes
+recursive-include .github *.yml *.md
+recursive-include docs *.md
+recursive-include scripts *.py
+recursive-include tests test_*.py
+global-exclude *.py[cod] .DS_Store
