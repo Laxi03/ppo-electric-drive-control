@@ -1,5 +1,13 @@
 # RLlib Drive Control
 
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue)](pyproject.toml)
+[![NumPy required](https://img.shields.io/badge/NumPy-required-blue)](pyproject.toml)
+[![Matplotlib required](https://img.shields.io/badge/Matplotlib-required-blue)](pyproject.toml)
+[![Gymnasium RL](https://img.shields.io/badge/Gymnasium-RL-green)](pyproject.toml)
+[![RLlib: PPO + ICM](https://img.shields.io/badge/RLlib-PPO_%2B_ICM-green)](docs/usage.md)
+[![Status: research prototype](https://img.shields.io/badge/Status-research_prototype-orange)](#rllib-drive-control)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+
 Python simulations for comparing classical PI/FOC, PPO, and PPO with intrinsic curiosity (ICM) on brushed DC and permanent-magnet synchronous motor (PMSM) speed tracking.
 
 The learned controller produces a continuous current reference. A shared inner PI/FOC loop handles the voltage command and physical limits. The classical comparator replaces the **outer** learned policy with speed PI. This is a simulation research project, not a hardware controller or a formal stability guarantee.
